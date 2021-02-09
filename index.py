@@ -30,11 +30,11 @@ def change_name(param_list, to_find, to_sub):
             if param_list_dict[dict_key] == to_find:
                 param_list_dict[dict_key] = to_sub
                 return param_list
-    return f"{to_find} does not exsist"
+    return f"{to_find} does not exist"
 
 
-# print(change_name(students, "Jordan", "Bryant"))
-# print(change_name(students, "Michael", "Bob"))
+print(change_name(students, "Jordan", "Bryant"))
+print(change_name(students, "Michael", "Bob"))
 print(change_name(students, "Rosales", "Smith"))
 
 
@@ -52,7 +52,7 @@ def change_name_3(param_dict, to_find, to_sub):
                 if to_find in key_value:
                     param_dict[key][param_dict[key].index(key_value)] = to_sub
                     return param_dict
-    return f"{to_find} does not exsist."
+    return f"{to_find} does not exist."
 
 
 print(change_name_3(sports_directory, "Messi", "Andres"))
@@ -88,8 +88,9 @@ def change_z(param_list, to_find, to_sub):
             if param_list_dict[dict_key] == to_find:
                 param_list_dict[dict_key] = to_sub
                 return param_list
-    return f"{to_find} does not exsist"
+    return f"{to_find} does not exist"
 
 print(change_z(z,20,30))
 print(change_z(z,10,30))
+print(change_z(z,10,1000))
 
